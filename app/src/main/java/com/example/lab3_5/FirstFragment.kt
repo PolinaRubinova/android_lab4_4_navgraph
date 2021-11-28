@@ -13,17 +13,15 @@ class FirstFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = FragmentFirstBinding.inflate(layoutInflater)
         val navController = findNavController()
-        binding.toSecond.setOnClickListener {
+        binding.bnToSecond.setOnClickListener {
             navController.navigate(R.id.action_fragment1_to_fragment2)
         }
-        binding.toAbout.setOnNavigationItemSelectedListener {
-            (activity as MainActivity).toAbout(it)
-        }
+//        binding.toAbout.setOnNavigationItemSelectedListener {
+//            (activity as MainActivity).toAbout(it)
+//        }
         return binding.root
     }
-
-
 }

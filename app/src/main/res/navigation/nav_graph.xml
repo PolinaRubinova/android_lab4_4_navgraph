@@ -5,6 +5,16 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/fragment1">
 
+
+    <action android:id="@+id/action_about"
+        app:destination="@+id/activityAbout" />
+
+    <activity
+        android:id="@+id/activityAbout"
+        android:name="com.example.lab3_5.AboutActivity"
+        android:label="activity_about"
+        tools:layout="@layout/activity_about"/>
+
     <fragment
         android:id="@+id/fragment1"
         android:name="com.example.lab3_5.FirstFragment"
@@ -14,6 +24,7 @@
             android:id="@+id/action_fragment1_to_fragment2"
             app:destination="@id/fragment2" />
     </fragment>
+
     <fragment
         android:id="@+id/fragment2"
         android:name="com.example.lab3_5.SecondFragment"
@@ -28,6 +39,7 @@
             app:popUpTo="@id/fragment1"
             app:popUpToInclusive="true" />
     </fragment>
+
     <fragment
         android:id="@+id/fragment3"
         android:name="com.example.lab3_5.ThirdFragment"

@@ -19,9 +19,6 @@ class FirstFragment : Fragment() {
         binding.bnToSecond.setOnClickListener {
             navController.navigate(R.id.action_fragment1_to_fragment2)
         }
-//        binding.toAbout.setOnNavigationItemSelectedListener {
-//            (activity as MainActivity).toAbout(it)
-//        }
         return binding.root
     }
 }

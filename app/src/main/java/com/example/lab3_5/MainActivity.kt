@@ -34,13 +34,4 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
-
-//    fun toAbout(item: MenuItem): Boolean {
-//        when (item.itemId) {
-//            R.id.about -> {
-//                startActivity(Intent(this, AboutActivity::class.java))
-//            }
-//        }
-//        return false
-//    }
 }

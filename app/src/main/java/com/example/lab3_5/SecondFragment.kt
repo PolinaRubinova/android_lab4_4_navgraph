@@ -24,9 +24,6 @@ class SecondFragment: Fragment() {
         binding.bnToThird.setOnClickListener {
             navController.navigate(R.id.action_fragment2_to_fragment3)
         }
-//        binding.toAbout.setOnNavigationItemSelectedListener {
-//            (activity as MainActivity).toAbout(it)
-//        }
         return binding.root
     }
 
